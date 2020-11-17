@@ -33,6 +33,7 @@ Learn NLP knowledge
     * 字串格式化
 * 內容
     * string.isnumeric(), string.isdigit(), string.isdecimal(): 用來判定字串內是否都屬於數值字元，差別在於 unicode 定義的區間不同
+    
     string = '3'
     
     |3 ways|True/False|
