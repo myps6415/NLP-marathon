@@ -179,3 +179,6 @@ Learn NLP knowledge
         
     * Word-boundary: 可以在正規表達式中設定搜尋規則邊界，像是當字詞字元轉為符號字元時即可設定為配對邊界。在正規表達式中這類型的邊界以 "\b" 表示
     * Anchor: 除了上述以字詞當作邊界，也可以將字串開頭或結尾當作配對邊界，可以使用 "^" 作為開頭配對邊界，"$" 作為結尾配對
+* 語法對照表
+![](https://github.com/myps6415/NLP-marathon/tree/main/D03%20正規表達式/regex1.png)
+![](https://github.com/myps6415/NLP-marathon/tree/main/D03%20正規表達式/regex2.png)
