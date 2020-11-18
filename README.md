@@ -181,4 +181,4 @@ Learn NLP knowledge
     * Anchor: 除了上述以字詞當作邊界，也可以將字串開頭或結尾當作配對邊界，可以使用 "^" 作為開頭配對邊界，"$" 作為結尾配對
 * 語法對照表
 ![](https://github.com/myps6415/NLP-marathon/blob/main/D03%20正規表達式/regex1.png?raw=true)
-![](https://github.com/myps6415/NLP-marathon/tree/main/D03%20正規表達式/regex2.png?raw=true)
+![](https://github.com/myps6415/NLP-marathon/blob/main/D03%20正規表達式/regex2.png?raw=true)
