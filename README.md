@@ -2,37 +2,39 @@
 Learn NLP knowledge
 
 ## Day1 Python 文字處理函數介紹
-* Python 基礎文字處理
-    * 計算字串長度 
-    * 取出字串內特定區間字符
-    * 合併字串
-    * 特殊字符運用
-    * 判斷字符存在與否、打小寫、數字
-    * 移除、取代字符
-    * 在字串中尋找指定字符
-* 內容
-    * strip()
-    * replace()
-    * split()
-    * count()
-    * startswith()/endswith()
-    * capitalize(): 將字串開頭轉為大寫
-    * find()/index(): 尋找字串中字元所在位置，index() 當字元不存在時報錯，find() 會輸出 -1
-    * upper()/lower()
-    * Counter(): 可以快速計算字串中所有字元出現過的次數
-    ```python=
-    from collections import Counter
-    
-    Counter('your sentence')
-    ```
+### Python 基礎文字處理
+* 計算字串長度 
+* 取出字串內特定區間字符
+* 合併字串
+* 特殊字符運用
+* 判斷字符存在與否、打小寫、數字
+* 移除、取代字符
+* 在字串中尋找指定字符
+
+### 內容
+* strip()
+* replace()
+* split()
+* count()
+* startswith()/endswith()
+* capitalize(): 將字串開頭轉為大寫
+* find()/index(): 尋找字串中字元所在位置，index() 當字元不存在時報錯，find() 會輸出 -1
+* upper()/lower()
+* Counter(): 可以快速計算字串中所有字元出現過的次數
+```python=
+from collections import Counter
+
+Counter('your sentence')
+```
 * 參考 [W3schools](https://www.w3schools.com/python/python_strings.asp)
 
 ## Day2 Python 文字處理函數介紹
-* Python 基礎文字處理
-    * 判斷字串中特定字符
-    * 字串格式化
-* 內容
-    * string.isnumeric(), string.isdigit(), string.isdecimal(): 用來判定字串內是否都屬於數值字元，差別在於 unicode 定義的區間不同
+### Python 基礎文字處理
+* 判斷字串中特定字符
+* 字串格式化
+
+### 內容
+* string.isnumeric(), string.isdigit(), string.isdecimal(): 用來判定字串內是否都屬於數值字元，差別在於 unicode 定義的區間不同
     
     string = '3'
     
@@ -66,20 +68,19 @@ Learn NLP knowledge
     |isdigit|False|
     |isdecimal|False|
     
-    * isalnum(): string 為字符和數字組成，輸出 True，否則輸出 False
-    * isupper()/islower(): 判斷字串內字元是否都是大寫/小寫
-    * 常見字串操作整理：
-        * [英文整理表格](https://www.w3schools.com/python/python_ref_string.asp)
-        * [中文整理表格](https://www.runoob.com/python/python-strings.html)
+* isalnum(): string 為字符和數字組成，輸出 True，否則輸出 False
+* isupper()/islower(): 判斷字串內字元是否都是大寫/小寫
+* 常見字串操作整理：
+    * [英文整理表格](https://www.w3schools.com/python/python_ref_string.asp)
+    * [中文整理表格](https://www.runoob.com/python/python-strings.html)
         
-    * String.format()
-    ```python=
-    '{} {}'.format('python', 'course')
-    ```
+* String.format()
+```python=
+'{} {}'.format('python', 'course')
+```
 
 * 參考資料
     * [Corey Schafer: String Formatting](https://www.youtube.com/watch?v=vTX3IwquFkc)
-    {%youtube vTX3IwquFkc%}
 
 ## Day3 正規表達式 (Regular Expression)
 * 常用於：
@@ -182,3 +183,32 @@ Learn NLP knowledge
 * 語法對照表
 ![](https://github.com/myps6415/NLP-marathon/blob/main/D03%20正規表達式/regex1.png?raw=true)
 ![](https://github.com/myps6415/NLP-marathon/blob/main/D03%20正規表達式/regex2.png?raw=true)
+
+## Day4 正規表達式 (Regular Expression)
+* 使用 Python 操作正規表達式，re 專門處理 Regex
+
+### Python 字串前綴
+* 在 Python 中，反斜線 (\) 會被當作是特殊符號得跳脫字元，像是 "\n" 代表換行，加上跳脫字元後 "\\n" 即代表一般 "\n" 符號
+* 為了避免字串中出現過多的反斜線，進而導致難以維護正規表達式的配對，因此我們可以使用原始字串前綴 `r"str"`，因此 `r"\n" == "\\n"`
+* 為了避免出現特殊符號問題，習慣上會將正規表達式的模式對象加上字串前綴 (ex: `r"\W\.\D"`)
+
+### 建立對象模式 (Pattern Object)
+```python=
+re.compile(pattern, flags=0)
+```
+* 將正規表達式轉為 pattern object，以此方法將其保存下來供後續之用
+```python=
+import re
+
+# 欲配對文本，期望配對出 SaveTheWorld@hotmail.com
+txt = 'SaveTheWorld@hotmail.com \n foobar@gmail.com'
+
+#建立模式對象
+pattern_obj = re.compile(pattern=r"(.*)@(?!gmail)\w+\.com")
+
+#進行配對 (使用 pattern.search 配對)
+x1 = pattern_obj.search(txt)
+print(x1.group())
+```
+
+### re.search(pattern, string, flags=0)
