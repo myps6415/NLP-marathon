@@ -11,7 +11,7 @@ Learn NLP knowledge
 * 移除、取代字符
 * 在字串中尋找指定字符
 
-## Day2 Python 文字處理函數介紹(https://github.com/myps6415/NLP-marathon/blob/main/D02%20Python%20文字處理函數介紹/README.md)
+## [Day2 Python 文字處理函數介紹](https://github.com/myps6415/NLP-marathon/blob/main/D02%20Python%20文字處理函數介紹/README.md)
 ### Python 基礎文字處理
 * 判斷字串中特定字符
 * 字串格式化
