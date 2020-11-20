@@ -25,6 +25,8 @@ Learn NLP knowledge
 * 整合 Day 3 所學套入 re package 使用
 * 個人見解同 Day 3：需要用再查就好
 
-## [Day5 NLP 中文斷詞](https://github.com/myps6415/NLP-marathon/blob/main/D05%20NLP%20中文斷詞/READ.md)
+## [Day5 NLP 中文斷詞](https://github.com/myps6415/NLP-marathon/blob/main/D05%20NLP%20中文斷詞/README.md)
 * 在機器學習中是透過向量來訓練，因此要將文章轉為向量呈現，必須把文章斷為字詞來代表該文章
 * 斷詞介紹
+
+## [Day6 使用結巴進行中文斷詞](https://github.com/myps6415/NLP-marathon/blob/main/D06%20使用結巴進行中文斷詞/README.md)
