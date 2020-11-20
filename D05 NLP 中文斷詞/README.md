@@ -87,13 +87,13 @@ ex: 天氣狀態 (Sunny, Rainy), 觀察狀態 (Walk, Shop, Wet)
 觀察狀態：Dry, Dry, Dry
 
 隱藏狀態：
-Sunny, Sunny, Sunny: 0.4 * 0.6 * 0.6 * 0.6 * 0.6 * 0.6 = 0.031104
+Sunny, Sunny, Sunny: 0.4 * 0.6 * 0.6 * 0.6 * 0.6 * 0.6 = 0.031104\n
 Rainy, Sunny, Sunny: 0.6 * 0.1 * 0.3 * 0.6 * 0.6 * 0.6 = 0.003888
 
 這裡對於上述的機率來做個詳盡的解釋 (以第一個狀態 Sunny, Sunny, Sunny 為例):
 
-a. 第一個 Sunny: Sunny 的 initial = 0.4，而由 Dry 的狀態下是 Sunny 的機率 = 0.6 => 0.4 * 0.6
-b. 第二個 Sunny: 前一天是 Sunny 而今天還是 Sunny 的機率 = 0.6，而由 Dry 的狀態下是 Sunny 的機率 = 0.6 => 0.6 * 0.6
+a. 第一個 Sunny: Sunny 的 initial = 0.4，而由 Dry 的狀態下是 Sunny 的機率 = 0.6 => 0.4 * 0.6\n
+b. 第二個 Sunny: 前一天是 Sunny 而今天還是 Sunny 的機率 = 0.6，而由 Dry 的狀態下是 Sunny 的機率 = 0.6 => 0.6 * 0.6\n
 c. 第三個 Sunny: 前一天是 Sunny 而今天還是 Sunny 的機率 = 0.6，而由 Dry 的狀態下是 Sunny 的機率 = 0.6 => 0.6 * 0.6
 
 因此最後 Sunny, Sunny, Sunny 在 Dry, Dry, Dry 的觀察狀態下的機率是 0.4 * 0.6 * 0.6 * 0.6 * 0.6 * 0.6 = 0.031104
@@ -104,3 +104,5 @@ c. 第三個 Sunny: 前一天是 Sunny 而今天還是 Sunny 的機率 = 0.6，�
 ![](https://github.com/myps6415/NLP-marathon/blob/main/D05%20NLP%20中文斷詞/Viterbi.jpeg?raw=true)
 * Viterbi會在所有路徑中，找尋最大機率的路徑
 * 圖中，所有路徑裡 A->D->G 的機率如果最大，則 Viterbi 即為選取此路徑
+
+### 未知詞斷詞
