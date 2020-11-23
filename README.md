@@ -30,3 +30,4 @@ Learn NLP knowledge
 * 斷詞介紹
 
 ## [Day6 使用結巴進行中文斷詞](https://github.com/myps6415/NLP-marathon/blob/main/D06%20使用結巴進行中文斷詞/README.md)
+* 結巴斷詞介紹
