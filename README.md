@@ -33,3 +33,4 @@ Learn NLP knowledge
 * 結巴斷詞介紹
 
 ## [Day7 使用 CkipTagger 進行中文斷詞](https://github.com/myps6415/NLP-marathon/blob/main/D07%20使用%20CkipTagger%20進行中文斷詞/README.md)
+* CkipTagger 介紹
