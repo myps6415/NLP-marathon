@@ -34,3 +34,7 @@ Learn NLP knowledge
 
 ## [Day7 使用 CkipTagger 進行中文斷詞](https://github.com/myps6415/NLP-marathon/blob/main/D07%20使用%20CkipTagger%20進行中文斷詞/README.md)
 * CkipTagger 介紹
+
+## [Day8 基礎語言模型：N-Gram](https://github.com/myps6415/NLP-marathon/blob/main/D08%20基礎語言模型%20N-Gram/README.md)
+* 了解何謂語言模型
+* 了解 N-Gram 語言模型的原理以及應用
